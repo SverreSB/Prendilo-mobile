@@ -1,14 +1,12 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
+ *	Prendilo: A food sharing application
+ * 	@author Sverre Broen
+ *	Color pallette: https://www.color-hex.com/color-palette/62853
  */
-
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Header from './src/components/header'
+import Header from './src/components/Header'
+import FoodList from './src/components/FoodList'
 
 const instructions = Platform.select({
   	ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,7 +19,10 @@ type Props = {};
 export default class App extends Component<Props> {
   	render() {
     	return (
-			<Header/>	
+			<View>
+				<Header headerText={'Prendilo'}/>	
+				<FoodList />
+			</View>
     	);
   	};
 }
