@@ -1,11 +1,8 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
+ *	Prendilo: A food sharing application
+ * 	@author Sverre Broen
+ *	Color pallette: https://www.color-hex.com/color-palette/62853
  */
-
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Header from './src/components/Header'
