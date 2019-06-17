@@ -9,11 +9,17 @@ class FoodList extends Component {
             .then(response => this.setState({ foods: response.data}));
     }
 
+    renderFoods() {
+        return this.state.foods.map(food => 
+            <Text key={food.title}>{food.title}</Text>
+        );
+    }
+
     render() {
         console.log(this.state);
         return (
             <View>
-                <Text>Food</Text>
+                {this.renderFoods()}
             </View>
         );
     }
