@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import axios from 'axios';
+import axios from '../../../node_modules/axios';
 import FoodDetail from './FoodDetail'
 
 class FoodList extends Component {
