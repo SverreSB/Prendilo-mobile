@@ -7,6 +7,6 @@ const FoodDetail = ({food}) => {
             <Text>{food.title}</Text>
         </View>
     );
-}
+};
 
 export default FoodDetail
