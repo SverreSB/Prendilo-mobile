@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import axios from 'axios';
+import FoodDetail from './FoodDetail'
 
 class FoodList extends Component {
     state = { foods: [] };
@@ -11,12 +12,11 @@ class FoodList extends Component {
 
     renderFoods() {
         return this.state.foods.map(food => 
-            <Text key={food.title}>{food.title}</Text>
+            <FoodDetail key={food.title} food={food}/>
         );
     }
 
     render() {
-        console.log(this.state);
         return (
             <View>
                 {this.renderFoods()}
