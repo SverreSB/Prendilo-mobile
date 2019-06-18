@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from '../../../node_modules/axios';
 import FoodDetail from './FoodDetail'
 import foodData from '../../../foodObjects.json'
@@ -20,9 +20,9 @@ class FoodList extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView>
                 {this.renderFoods()}
-            </View>
+            </ScrollView>
         );
     }
 }
