@@ -1,11 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 
 const Card = ({children}) => {
     return(
-        <View style={styles.containerStyle}>
+        <TouchableOpacity style={styles.containerStyle}>
             {children}
-        </View>
+        </TouchableOpacity>
     );
 };
 

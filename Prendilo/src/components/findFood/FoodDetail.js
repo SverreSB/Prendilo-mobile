@@ -33,12 +33,14 @@ const style = {
     profileImageStyle: {
         width: 50,
         height: 50,
-        borderRadius: 50/2
+        borderRadius: 50/2,
+        opacity: 1
     },
     headerContentStyle:  {
         justifyContent: 'space-around',
         flexDirection: 'column',
-        marginLeft: 15
+        marginLeft: 15,
+        opacity: 1
     },
     productStyle: {
         fontSize: 18
